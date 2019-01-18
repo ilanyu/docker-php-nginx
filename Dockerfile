@@ -23,4 +23,6 @@ EXPOSE 80
 
 VOLUME /var/www/html/public
 
+WORKDIR /var/www/html/public
+
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
