@@ -21,8 +21,8 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
 
-VOLUME /var/www/html/public
+VOLUME /var/www/html
 
-WORKDIR /var/www/html/public
+WORKDIR /var/www/html
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
